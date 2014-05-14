@@ -15,4 +15,3 @@
 #
 
 add_lunch_combo full_wingray-userdebug
-add_lunch_combo omni_wingray-userdebug

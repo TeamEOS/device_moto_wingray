@@ -29,7 +29,13 @@ PRODUCT_BRAND := Android
 PRODUCT_MODEL := Xoom Wifi
 
 PRODUCT_MANUFACTURER := MOTOROLA
-PRODUCT_RESTRICT_VENDOR_FILES := true
+PRODUCT_RESTRICT_VENDOR_FILES := false
 # Inherit from hardware-specific part of the product configuration
 $(call inherit-product, device/moto/wingray/device.mk)
+
+$(call inherit-product, vendor/eos/config/common_full_tablet_wifionly.mk)
+# Copy Bootanimation
+PRODUCT_COPY_FILES += \
+vendor/eos/prebuilt/common/bootanimation/720.zip:system/media/bootanimation.zip
+
 $(call inherit-product-if-exists, vendor/moto/wingray/wingray-vendor.mk)

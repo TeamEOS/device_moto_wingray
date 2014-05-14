@@ -40,8 +40,8 @@ TARGET_USERIMAGES_USE_EXT4 := true
 BOARD_KERNEL_PAGESIZE := 2048
 BOARD_KERNEL_BASE := 0x10000000
 BOARD_KERNEL_CMDLINE := androidboot.carrier=wifi-only product_type=w
-KERNEL_MODULES_DIR := /system/lib/modules
-TARGET_KERNEL_SOURCE := device/moto/stingray-kernel
+#KERNEL_MODULES_DIR := /system/lib/modules
+TARGET_KERNEL_SOURCE := kernel/moto/wingray
 TARGET_KERNEL_CONFIG := elementalxvanilla_defconfig
 # TARGET_KERNEL_CONFIG := stingray_defconfig
 # TARGET_KERNEL_CUSTOM_TOOLCHAIN := arm-eabi-4.6
@@ -145,7 +145,7 @@ TARGET_RELEASETOOLS_EXTENSIONS := device/moto/wingray
 
 -include vendor/moto/stingray/BoardConfigVendor.mk
 
-TARGET_OTA_ASSERT_DEVICE := wingray,stingray,everest
+TARGET_OTA_ASSERT_DEVICE := wingray,stingray,stingray_cdma,umts_everest
 
 # CM Boot animation
 TARGET_SCREEN_HEIGHT := 800
