@@ -23,7 +23,7 @@
 # *not* include it on all devices, so it is safe even with hardware-specific
 # components.
 
-ifneq ($(filter stingray stingray_cdma wingray umts_everest,$(TARGET_DEVICE)),)
+ifneq ($(filter stingray stingray_cdma wingray everest,$(TARGET_DEVICE)),)
 
 LOCAL_PATH := $(call my-dir)
 

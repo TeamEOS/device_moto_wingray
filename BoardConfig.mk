@@ -146,7 +146,7 @@ TARGET_RELEASETOOLS_EXTENSIONS := device/moto/wingray
 
 -include vendor/moto/stingray/BoardConfigVendor.mk
 
-TARGET_OTA_ASSERT_DEVICE := wingray,stingray,stingray_cdma,umts_everest
+TARGET_OTA_ASSERT_DEVICE := wingray,stingray,stingray_cdma,everest
 
 # CM Boot animation
 TARGET_SCREEN_HEIGHT := 800
