@@ -38,6 +38,10 @@ PRODUCT_PACKAGES += \
 # PRODUCT_COPY_FILES := \
 # 	$(LOCAL_KERNEL):kernel
 
+# Overclock to 1400 out the box
+PRODUCT_COPY_FILES := \
+        device/moto/wingray/45XoomOC:system/etc/init.d/45XoomOC
+
 PRODUCT_COPY_FILES := \
         device/moto/wingray/libaudio/audio_policy.conf:system/etc/audio_policy.conf
 

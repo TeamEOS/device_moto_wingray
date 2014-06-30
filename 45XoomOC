@@ -1,0 +1,7 @@
+#!/system/bin/sh
+# Xoom OC on boot
+# It needs it real bad
+
+echo "1400000" > /sys/devices/system/cpu/cpu0/cpufreq/scaling_max_freq
+echo "1400000" > /sys/devices/system/cpu/cpu1/cpufreq/scaling_max_freq
+
