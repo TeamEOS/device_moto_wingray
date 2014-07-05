@@ -133,7 +133,8 @@ COMMON_GLOBAL_CFLAGS += -DNEEDS_VECTORIMPL_SYMBOLS
 NEED_WORKAROUND_CORTEX_A9_745320 := true
 
 TARGET_RECOVERY_PIXEL_FORMAT := "RGB_565"
-TARGET_RECOVERY_UI_LIB := librecovery_ui_stingray
+# removed for TWRP
+#TARGET_RECOVERY_UI_LIB := librecovery_ui_stingray
 
 TARGET_RECOVERY_FSTAB = device/moto/wingray/fstab.stingray
 
@@ -157,3 +158,27 @@ TARGET_SCREEN_WIDTH := 1280
 TARGET_BOOTANIMATION_PRELOAD := true
 TARGET_BOOTANIMATION_TEXTURE_CACHE := true
 TARGET_BOOTANIMATION_USE_RGB565 := true
+
+#twrp
+DEVICE_RESOLUTION := 1280x800
+TW_INTERNAL_STORAGE_PATH := "/data/media"
+TW_INTERNAL_STORAGE_MOUNT_POINT := "data"
+TW_EXTERNAL_STORAGE_PATH := "/sdcard"
+TW_EXTERNAL_STORAGE_MOUNT_POINT := "sdcard"
+TW_FLASH_FROM_STORAGE := true
+RECOVERY_SDCARD_ON_DATA := true
+TW_DEFAULT_EXTERNAL_STORAGE := true
+TW_NO_USB_STORAGE := true
+
+# TWRP encryption
+TW_INCLUDE_JB_CRYPTO := true
+TW_CRYPTO_FS_TYPE := "ext4"
+TW_CRYPTO_REAL_BLKDEV := "/dev/block/platform/sdhci-tegra.3/by-name/userdata"
+TW_CRYPTO_MNT_POINT := "/data"
+TW_CRYPTO_FS_OPTIONS := "noatime,nosuid,nodev,nomblk_io_submit,noauto_da_alloc,errors=panic wait,encryptable=footer"
+TW_CRYPTO_FS_FLAGS := "0x00000406"
+TW_CRYPTO_KEY_LOC := "footer"
+
+#TWRP Brightness settings
+TW_BRIGHTNESS_PATH := "/sys/devices/platform/tegra-i2c.0/i2c-0/0-002c/leds/lcd-backlight/brightness"
+TW_MAX_BRIGHTNESS := 255
