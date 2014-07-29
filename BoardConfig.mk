@@ -23,7 +23,6 @@ TARGET_ARCH_VARIANT_CPU := cortex-a9
 TARGET_CPU_VARIANT := generic
 TARGET_GCC_VERSION_EXP := 4.8-linaro
 
-
 # Avoid the generation of ldrcc instructions
 NEED_WORKAROUND_CORTEX_A9_745320 := true
 
@@ -31,7 +30,6 @@ NEED_WORKAROUND_CORTEX_A9_745320 := true
 TARGET_ARCH_VARIANT_FPU := vfpv3-d16
 ARCH_ARM_HAVE_TLS_REGISTER := true
 ARCH_ARM_USE_NON_NEON_MEMCPY := true
-
 
 TARGET_BOARD_PLATFORM := tegra
 TARGET_TEGRA_VERSION := ap20
@@ -44,11 +42,8 @@ BOARD_KERNEL_BASE := 0x10000000
 BOARD_KERNEL_CMDLINE := androidboot.carrier=wifi-only product_type=w
 #KERNEL_MODULES_DIR := /system/lib/modules
 TARGET_KERNEL_SOURCE := kernel/moto/wingray
-TARGET_KERNEL_CONFIG := elementalxvanilla_defconfig
+TARGET_KERNEL_CONFIG := eos_defconfig
 TARGET_KERNEL_CUSTOM_TOOLCHAIN := 4.9-linaro-a9
-# TARGET_KERNEL_CONFIG := stingray_defconfig
-# TARGET_KERNEL_CUSTOM_TOOLCHAIN := arm-eabi-4.6
-# TARGET_PREBUILT_KERNEL := device/moto/wingray/kernel
 
 # Filesystem
 BOARD_SYSTEMIMAGE_PARTITION_SIZE := 1056858112
