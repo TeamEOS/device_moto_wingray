@@ -21,7 +21,6 @@ TARGET_ARCH := arm
 TARGET_ARCH_VARIANT := armv7-a
 TARGET_ARCH_VARIANT_CPU := cortex-a9
 TARGET_CPU_VARIANT := generic
-TARGET_GCC_VERSION_EXP := 4.8-linaro
 
 # Avoid the generation of ldrcc instructions
 NEED_WORKAROUND_CORTEX_A9_745320 := true
@@ -43,7 +42,6 @@ BOARD_KERNEL_CMDLINE := androidboot.carrier=wifi-only product_type=w
 #KERNEL_MODULES_DIR := /system/lib/modules
 TARGET_KERNEL_SOURCE := kernel/moto/wingray
 TARGET_KERNEL_CONFIG := eos_defconfig
-TARGET_KERNEL_CUSTOM_TOOLCHAIN := 4.9-linaro-a9
 
 # Filesystem
 BOARD_SYSTEMIMAGE_PARTITION_SIZE := 1056858112
