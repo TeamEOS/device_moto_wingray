@@ -33,6 +33,7 @@ LOCAL_SRC_FILES := 						\
 				PressureSensor.cpp		\
 				GyroSensor.cpp
 
+LOCAL_C_INCLUDES := device/moto/wingray/kernel-headers
 
 LOCAL_MODULE_PATH := $(TARGET_OUT_SHARED_LIBRARIES)/hw
 

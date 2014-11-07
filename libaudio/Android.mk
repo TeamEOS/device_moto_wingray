@@ -46,6 +46,8 @@ LOCAL_SRC_FILES += \
 LOCAL_C_INCLUDES += \
     $(call include-path-for, audio-effects)
 
+LOCAL_C_INCLUDES += device/moto/wingray/kernel-headers
+
 LOCAL_CFLAGS += -fno-short-enums
 
 LOCAL_STATIC_LIBRARIES := \

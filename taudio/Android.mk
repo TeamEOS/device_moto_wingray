@@ -3,18 +3,21 @@
 LOCAL_PATH:= $(call my-dir)
 
 include $(CLEAR_VARS)
+LOCAL_C_INCLUDES:= device/moto/wingray/kernel-headers
 LOCAL_SRC_FILES:= tctl.c
 LOCAL_MODULE_TAGS:= eng
 LOCAL_MODULE:= tctl
 include $(BUILD_EXECUTABLE)
 
 include $(CLEAR_VARS)
+LOCAL_C_INCLUDES:= device/moto/wingray/kernel-headers
 LOCAL_SRC_FILES:= tplay.c
 LOCAL_MODULE_TAGS:= eng
 LOCAL_MODULE:= tplay
 include $(BUILD_EXECUTABLE)
 
 include $(CLEAR_VARS)
+LOCAL_C_INCLUDES:= device/moto/wingray/kernel-headers
 LOCAL_SRC_FILES:= trec.c
 LOCAL_MODULE_TAGS:= eng
 LOCAL_MODULE:= trec
